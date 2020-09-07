@@ -1,0 +1,10 @@
+<nav class="sidebar sidebar-offcanvas" id="sidebar">
+  <ul class="nav">
+    <li class="nav-item" *ngFor="let menu of sideMenu" [routerLink]="menu.route">
+      <a class="nav-link">
+        <span class="menu-title">{{menu.name}}</span>
+        <i [class]="menu.icon"></i>
+      </a>
+    </li>
+  </ul>
+</nav>
